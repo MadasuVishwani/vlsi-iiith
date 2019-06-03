@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="js/jcanvas.min.js></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<title>Simulator</title>
+	<link rel="stylesheet" type="text/css" href="design_layout_SRIP.css">
+	<script src="design_layout_SRIP.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.0.0/fabric.js"></script>
+</head>
+<body onload="init();">
+		
+	<h1 id="heading">EXPERIMENT ON XOR/XNOR GATES</h1>
+	<div id="simulate_button">
+		<p><button class="btn"> Simulate</button>   <button class="btn"> Full Graph</button>
+        <select id="gate" class="some-margin">
+      <option value="0" selected disabled hidden>Select the gate type</option>
+      <option value="1">XOR Gate Circuit</option>
+      <option value="2">XNOR Gate Circuit</option>
+    </select>
+        <button class="btn"> Layout Design</button></p>
+	</div>
+	<table id="one">
+		<tr>
+			<th align="left">
+				<h3 id="toolhead">Tool Box</h3><br>
+				<h4><div id="selectedIcon">Selected Icon</div><br>
+				<img id="currentIcon" src="D:\images/icon1.gif" style="width:40px;height:40px;"></h4><br><br>
+				<div id="smallheadings">Available icons </div><br><br>
+				<table>
+					<tr>
+					 	<td><img class="componentButton PMOS" src="D:\images/PMOS.gif" style="width:50px;height:50px;"></td>
+						<td><img class="componentButton NMOS" src="D:\images/NMOS.gif"style="width:50px;height:50px;"></td>  
+					</tr>
+					<tr>
+						<td><img class="componentButton Ground" src="D:\images/Ground.gif" style="width:50px;height:50px;"></td>
+						 <td><img class="componentButton Capacitor"  src="D:\images/Capacitor.gif"style="width:50px;height:50px;"></td>
+					 </tr>
+					<tr>
+					 	<td><img class="componentButton Wire" src="D:\images/Wire.gif"  style="width:50px;height:50px;"></td>
+					  	<td><img class="componentButton Vdd" src="D:\images/vdd.gif" style="width:50px;height:50px;"></td>
+					  </tr>
+
+ 					<tr>
+					 	<td><img class="componentButton input" src="D:\images/input.gif" style="width:50px;height:50px;"></td>
+					  	<td><img class="componentButton output" src="D:\images/output.gif" style="width:50px;height:50px;"></td>   
+					</tr>
+				</table>
+			</th>
+			<th>
+				<canvas id="myCanvas" width="800px" height="500px" style="border:1px solid #d3d3d3;">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+			</th>
+            <th>
+				<h3 id="toolhead">Circuit Design</h3><br>
+				<div class="canvas">
+					<svg id='connector_canvas'></svg>
+				</div>
+
+
+ 			</th>
+
+ 			<th>
+				<h3 id="toolhead">Simulation Of Circuit</h3>
+				<div class="graph-zone"></div>
+
+ 			</th>
+
+		</tr>
+       
+</body>
+</html>
