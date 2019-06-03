@@ -1,5 +1,5 @@
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script>
+
+
         var score = 0;
         var currentQuestion = 0;
         var questions = [{
@@ -133,6 +133,6 @@
             }
             $('#isCorrect').html(result);
         }
-    </script>
+
 
 
