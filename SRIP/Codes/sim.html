@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="WaveDrom.ProcessAll()">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/1.9.2/skins/default.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/1.9.2/wavedrom.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="finalSimulator.js"></script>
+<h1 style="text-align: center;">Simulator for D Flip Flop</h1>
+
+ <div class="box lightblue-box">
+  <div>
+<p>
+    <select id="clock" class="some-margin">
+      <option value="0" selected disabled hidden>Select Gate Circuit type</option>
+      <option value="1">XOR Gate Circuit</option>
+      <option value="2">XNOR Gate Circuit</option>
+    </select>
+        <button onclick="myFunction()" class="some-margin">Simulate</button>
+    <button onclick="myFunction()" class="some-margin">Full Graph</button>
+    <button onclick="myFunction()" class="some-margin">Layout design</button>
+    </p>
+  </div>
+
+ </script>
+  </h5>
+  <div style="text-align: center;">
+    <button onclick="document.location.reload(false)" class="some-margin">Clear</button>
+  </div> 
+ </div>
+ <div>
+  <h1 style="text-align: left;">How to use the simulator</h1>
+    
+      <ol>
+      <div>
+      <h3> Components Required</h3>
+      <li>4 PMOS</li>
+      <li>4 NMOS</li>
+      <li>Ground</li>
+      <li>Vdd</li>
+      <li>Input Pins</li>
+      <li>Output Pins</li>
+      </div>
+      </ol>
+      <ol>
+      <h3>Connecting the Components</h3>
+     
+        <li>Make the connections with wire. The connections would be similar to the example in theory except that instead of C and D we will have A complement and B complement</li>
+        <li>Connect both the pairs of PMOS in parallel i.e the source and drain of both should be connected <a href="#howto">(shown below)</a></li>
+        <li>The two parallel combination is placed in series between Vdd and output node</li>
+        <li>Connect both the pairs of NMOS in seriesi.e. the source of one getsconnected to the drain of other</li>
+        <li>The two series connection is then placed in paralle between output node and ground</li>
+        <li>Connect a capacitor between output node and ground</li>
+      </ol>
+      <h3>Obeservation and Simulation</h3>
+    <ol>
+    <li>Press the simulate button on the top</li>
+    <li>Observe the graph nd verify that it works as XOR/XNOR gate</li>
+    </ol>
+</div>
+</body>
+</html>

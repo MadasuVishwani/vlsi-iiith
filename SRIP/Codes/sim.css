@@ -1,0 +1,22 @@
+<style>
+  h1   {
+            font-family: 'Open Sans';
+            background-color: #808080;
+            padding: 10px;
+            color: #FFFFFF;
+            text-align: center
+
+        }
+   p   {
+            font-family: 'Open Sans';
+            font-size: 15px;
+            background-color: #A9A9A9;
+            padding: 5px;
+            font-weight: bold;
+        }
+   h3  {
+           background-color:#3cb371 ;
+           padding:5px;
+       }
+</style>
+ 
