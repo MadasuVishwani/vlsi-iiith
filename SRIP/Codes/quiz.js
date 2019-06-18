@@ -1,4 +1,3 @@
-<script>
 var myQuestions = [
     {
         question: "1) Can you distinguish between AND and XNOR gate when both the inputs are 1?",
@@ -90,7 +89,6 @@ var myQuestions = [
         },
         correctAnswer: 'a'
     },
-   
 ];
 
 var quizContainer = document.getElementById('quiz');
@@ -180,5 +178,3 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 }
-
-</script>
