@@ -1,0 +1,77 @@
+{
+    "artciles": [
+        {
+            "q": "1) Can you distinguish between AND and XNOR gate when both the inputs are 1?",
+            "opt1": "NO",
+            "opt2": "YES",
+            "opt3": "MAY OR MAYNOT",
+			"opt4": "NONE",
+            "answer": "NO"
+        },
+        {
+            "q": "2) Chose the correct design of (A+BC)' using NMOS only.",
+            "opt1": "fig1",
+            "opt2": "fig2",
+            "opt3": "fig3",
+			"opt4": "fig4",
+            "answer": "fig2"
+        },
+        {
+            "q": " 3) Chose the correct design of (AC+BC)' using PMOS only.",
+            "opt1": "fig5",
+            "opt2": "fig6",
+            "opt3": "fig7",
+			"opt4": "fig8",
+            "answer": "fig5"
+        },
+        {
+            "q": "4) In above question what is the minimum number of transistor required for making the design?",
+            "opt1": "4",
+            "opt2": "2",
+            "opt3": "5",
+			"opt4": "3"
+            "answer": "5"
+        },
+        {
+            "q": "5) Chose the correct design of ABC using complementary logic.",
+            "opt1": "fig9",
+            "opt2": "fig10",
+            "opt3": "fig11",
+			"opt4": "fig12"
+            "answer": "fig10"
+        },
+        {
+            "q": "6) Chose the correct design of A+B+C using complementary logic.",
+            "opt1": "fig13",
+            "opt2": "fig14",
+            "opt3": "fig15",
+			"opt4": "fig16"
+            "answer": "fig14"
+        },
+        {
+            "q": "7) What will be the minimum number of transistor required for designing ABC+A'BC'+(AB)'C+A(BC)'?",
+            "opt1": "12",
+            "opt2": "11",
+            "opt3": "8",
+			"opt4": "10"
+            "answer": "11"
+        },
+        {
+            "q": "8) What will be the minimum number of transistor required for designing xy+xz+zy+xy'+z ?",
+            "opt1": "6",
+            "opt2": "4",
+            "opt3": "3",
+			"opt4": "2"
+            "answer": "3"
+        },
+        {
+            "q": "9) Reduce the expression xy(z+w)+y'(x'z+xz)+z'w and tell the min number of transistor required for the design.",
+            "opt1": "8",
+            "opt2": "6",
+            "opt3": "11",
+			"opt4": "12"
+            "answer": "8"
+        },
+        
+    ]
+}
